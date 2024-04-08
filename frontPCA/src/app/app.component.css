@@ -1,0 +1,19 @@
+/* Estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el desplazamiento de la página */
+  }
+  
+  
+  
+  /* Ajuste para el contenido principal */
+  router-outlet, app-dashboard {
+    margin-left: 20%; /* Para dar espacio al sidebar */
+    width: 80%; /* Ajusta este valor para el contenido principal */
+    height: 95%; /* Ajusta este valor según lo necesites */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es largo */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+
+    

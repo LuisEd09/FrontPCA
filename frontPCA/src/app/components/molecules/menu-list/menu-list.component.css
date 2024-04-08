@@ -1,0 +1,77 @@
+.menuContainer {
+  margin-left: 10%;
+  margin-top: 15%;
+  font-size: 18px;
+}
+.menu{
+  margin-right: 10%;
+  font-size: 18px;
+  align-items: center;
+  overflow: auto;
+  
+}
+.menu-item{
+  color: #726969;
+  margin-bottom: 3%;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.menu-subitem{
+  margin-top: 4%;
+  transform: translateX(25%);
+  font-size: 16px;
+}
+.material-symbols-outlined{
+  font-family: 'Material Symbols Outlined';
+  font-size: 25px;
+  color: #726969;
+  padding-right: 4%;
+  margin-left: 5%;
+}
+.submenu {
+  display: none; /* Oculta las subcategorías por defecto */
+}
+
+.submenu.show {
+  display: flex; /* Muestra las subcategorías cuando se agrega la clase .show */
+  flex-direction: column; /* Ajusta la dirección a columna */
+  width: 200px;
+}
+
+.sidebar {
+  background-color: #2d2013;
+  border-right: 1px solid #ddd;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  margin-top: 0;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ec831a;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #ec831a;
+}

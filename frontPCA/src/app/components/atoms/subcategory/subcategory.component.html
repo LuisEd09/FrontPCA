@@ -1,0 +1,7 @@
+<div class="menu-item">
+    <span class="material-symbols-outlined">{{ icono }}</span>
+    <span (click)="toggleSubMenu()">{{ texto }}</span>
+    <div class="submenu" [class.show]="showSubMenu">
+      <a *ngFor="let subcategoria of subcategorias" [routerLink]="subcategoria.ruta">{{ subcategoria.texto }}<br></a>
+    </div>
+  </div>

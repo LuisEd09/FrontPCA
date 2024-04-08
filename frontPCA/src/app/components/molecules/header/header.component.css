@@ -1,0 +1,16 @@
+.headerContainer{
+    position: fixed;
+    right: 0%;
+    width: 82%;
+    height: 10%; /* Ajusta este valor según lo necesites */
+    background-color: #EF8F2F; /* Cambia esto al color deseado para el header */
+    z-index: 1; /* Asegura que el header esté por encima del sidebar */
+}
+
+h1{
+    font-size:x-large;
+    color: #FFFFFF;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

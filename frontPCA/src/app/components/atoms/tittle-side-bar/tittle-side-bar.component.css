@@ -1,0 +1,21 @@
+.tittle {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #070707;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 25%;
+    display: flex;
+    place-items: center;
+  }
+
+  .material-symbols-outlined{
+    font-family: 'Material Symbols Outlined';
+    font-size: 25px;
+    color: #333;
+    margin-right: 6%;
+    transform: scaleX(-1);
+  }
