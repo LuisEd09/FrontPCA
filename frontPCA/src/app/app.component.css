@@ -5,15 +5,29 @@ body {
     overflow: hidden; /* Evita el desplazamiento de la página */
   }
   
-  
-  
-  /* Ajuste para el contenido principal */
-  router-outlet, app-dashboard {
-    margin-left: 20%; /* Para dar espacio al sidebar */
-    width: 80%; /* Ajusta este valor para el contenido principal */
-    height: 95%; /* Ajusta este valor según lo necesites */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es largo */
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
-  }
+.mainContainer{
+    display:grid;
+    grid-template: 9% 1fr / 17% 1fr;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar content content";
+    height: 100vh;
+}
+
+app-sidebar{
+  background-color: #EF8F2F;
+  grid-area: sidebar;
+}
+
+app-dashboard{
+  background-color: blueviolet;
+  grid-area: content;
+  padding: 2%;
+}
+
+app-header{
+  background-color: cadetblue; 
+  grid-area: header;
+}
 
     
