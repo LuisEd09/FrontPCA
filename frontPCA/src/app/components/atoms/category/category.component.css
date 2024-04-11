@@ -1,4 +1,4 @@
-.menu-item {
+.list_item {
   padding: 10px 20px;
   color: #726969;
   border: none;
@@ -9,7 +9,8 @@
   font-size: 20px;
   display: block; /* Cambiado a display: block */
   align-items: center;
-  position: relative;
+  display: flex;
+  background-color: red;
 }
 
 .material-symbols-outlined {
@@ -19,6 +20,6 @@
   margin-right: 6%;
 }
 
-.text {
+.nav_link {
   font-size: 15px;
 }

@@ -1,56 +1,7 @@
-<div class="menuContainer">
-
-  
-  <br><br>
-  <div class="menu">
-    <div class="menu-item">
-      <span class="material-symbols-outlined">person_add</span>
-      <span>Nuevo Empleado</span>
-    </div>
-    <div class="menu-item">
-      <span class="material-symbols-outlined">badge</span>
-      <span>Empleado con ROL</span>
-    </div>
-    <div class="menu-item has-submenu">
-      <span class="material-symbols-outlined">schedule</span>
-      <span (click)="toggleSubMenu($event, submenu)">Pendientes</span>
-      <div #submenu class="submenu" [class.show]="showSubMenu">
-        <div class="menu-subitem">
-          <span>Asignar Tarjeta</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Baja</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Contrato Indefinido</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Contrato Prueba</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Constancia de Situacion Fiscal</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Curp</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Datos</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>NSS</span><br>
-        </div>
-        <div class="menu-subitem">
-          <span>Renuncia</span><br>
-        </div>
-      </div>
-    </div>
-    <div class="menu-item">
-      <span class="material-symbols-outlined">&#x2605;</span>
-      <span>Médico</span>
-    </div>
-    <div class="menu-item">
-      <span class="material-symbols-outlined">&#x2605;</span>
-      <span>Inventario</span>
-    </div>
-  </div>
-</div>
+<nav class="nav">
+  <ul class="list">
+    <app-category></app-category>
+    <app-category></app-category>
+    <app-category></app-category>
+  </ul>
+</nav>
