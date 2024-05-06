@@ -3,3 +3,13 @@
     padding: 0%;
     margin: 0%;
 }
+
+:root {
+    --color-primary: #ec831a;
+    --color-secondary: #f39c12;
+    --color-accent: #c56a00;
+    --color-background-light: #f7f7f7;
+    --color-background-dark: #1f2937;
+    --color-text-dark: #333333;
+    --color-text-light: #f2f2f2;
+  }

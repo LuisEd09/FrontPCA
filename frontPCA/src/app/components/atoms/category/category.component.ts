@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent {
-  @Input() icono?: string;
-  @Input() texto?: string;
-  @Input() ruta?: string;
+  @Input() icon?: string;
+  @Input() text?: string;
+  @Input() url?: string;
   
 }

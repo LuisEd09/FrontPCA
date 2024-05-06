@@ -7,12 +7,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu-list.component.css']
 })
 export class MenuListComponent {
-  showSubMenu = false;
-  @ViewChild('submenu', { static: true }) submenuRef?: ElementRef<HTMLDivElement>;
+  categories = [
+    { icon: 'schedule', text: 'Nuevo Empleado', url: '/nuevo-empleado' },
+    { icon: 'schedule', text: 'Inventario', url: '/inventario' },
+    { icon: 'schedule', text: 'Medico', url: '/medico' },
+    { icon: 'schedule', text: 'Reportes', url: '/reportes' }
+  ];
 
-  toggleSubMenu(event: Event, submenu: HTMLDivElement) {
-    this.showSubMenu = !this.showSubMenu;
-    event.stopPropagation();
-    submenu.classList.toggle('show');
-  }
+  subcategories = [
+    {
+      icon: 'schedule',
+      text: 'Pendientes',
+      subcategories: [
+        { text: 'Tareas pendientes', url: '/tareas-pendientes' },
+        { text: 'Reportes pendientes', url: '/reportes-pendientes' },
+        { text: 'Autorizaciones pendientes', url: '/autorizaciones-pendientes' }
+      ]
+    },
+    {
+      icon: 'schedule',
+      text: 'Empleados',
+      subcategories: [
+        { text: 'Empleados activos', url: '/empleados-activos' },
+        { text: 'Empleados inactivos', url: '/empleados-inactivos' }
+      ]
+    }
+  ];
 }
+

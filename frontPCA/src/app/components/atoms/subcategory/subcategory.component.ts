@@ -6,13 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./subcategory.component.css']
 })
 export class SubcategoryComponent {
-  @Input() icono?: string;
-  @Input() texto?: string;
-  @Input() subcategorias: { texto: string, ruta: string }[] = [];
+  @Input() icon: string = '';
+  @Input() text: string = '';
+  @Input() subcategories: { text: string, url: string }[] = [];
 
-  showSubMenu = false;
+  isOpen: boolean = false;
 
-  toggleSubMenu() {
-    this.showSubMenu = !this.showSubMenu;
+  toggleSubcategories() {
+    this.isOpen = !this.isOpen;
   }
 }

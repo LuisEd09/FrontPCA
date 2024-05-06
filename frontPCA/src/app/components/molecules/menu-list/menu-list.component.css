@@ -1,40 +1,12 @@
-
-.material-symbols-outlined{
-  font-family: 'Material Symbols Outlined';
-  font-size: 25px;
-  color: #726969;
-  padding-right: 4%;
-  margin-left: 5%;
-}
-
-.nav {
+.menu-list-container {
   background-color: #25cd8d;
-  border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
-.sidebar h1 {
-  margin-top: 0;
-  padding: 10px 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.sidebar ul {
-  list-style: none;
+.menu-list-container ul {
+  list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.sidebar li {
-  padding: 10px 15px;
-  border-bottom: 1px solid #ec831a;
-  cursor: pointer;
-}
-
-.sidebar li:hover {
-  background-color: #ec831a;
 }

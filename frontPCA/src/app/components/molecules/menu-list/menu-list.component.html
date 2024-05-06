@@ -1,7 +1,6 @@
-<nav class="nav">
-  <ul class="list">
-    <app-category></app-category>
-    <app-category></app-category>
-    <app-category></app-category>
+<nav>
+  <ul>
+    <app-category *ngFor="let category of categories" [icon]="category.icon" [text]="category.text" [url]="category.url"></app-category>
+    <app-subcategory *ngFor="let subcategory of subcategories" [icon]="subcategory.icon" [text]="subcategory.text" [subcategories]="subcategory.subcategories"></app-subcategory>
   </ul>
 </nav>

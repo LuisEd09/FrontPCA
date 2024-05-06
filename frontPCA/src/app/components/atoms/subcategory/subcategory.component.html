@@ -1,7 +1,12 @@
-<div class="menu-item">
-    <span class="material-symbols-outlined">{{ icono }}</span>
-    <span (click)="toggleSubMenu()">{{ texto }}</span>
-    <div class="submenu" [class.show]="showSubMenu">
-      <a *ngFor="let subcategoria of subcategorias" [routerLink]="subcategoria.ruta">{{ subcategoria.texto }}<br></a>
-    </div>
-  </div>
+<li>
+  <a (click)="toggleSubcategories()">
+    <span [innerHTML]="icon"></span>
+    <span>{{ text }}</span>
+    <span class="arrow" [class.open]="isOpen">&#9660;</span>
+  </a>
+  <ul *ngIf="isOpen">
+    <li *ngFor="let subcategory of subcategories">
+      <a [routerLink]="subcategory.url">{{ subcategory.text }}</a>
+    </li>
+  </ul>
+</li>
