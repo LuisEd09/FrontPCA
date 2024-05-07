@@ -1,8 +1,9 @@
 .menu-list-container {
-  background-color: #25cd8d;
+  background-color: #bc0536;
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 0;
+  width: 30vh;
 }
 
 .menu-list-container ul {

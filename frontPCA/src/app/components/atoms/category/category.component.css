@@ -1,16 +1,23 @@
-.list_item {
-  padding: 10px 20px;
-  color: #726969;
+.category {
+  padding: 5px 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-  margin-top: 10px;
-  font-size: 20px;
-  display: block; /* Cambiado a display: block */
+  margin-top: 1rem;
+  font-size: large;
   align-items: center;
   display: flex;
-  background-color: red;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(17, 226, 17);
+}
+.category a{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
 }
 
 .material-symbols-outlined {
