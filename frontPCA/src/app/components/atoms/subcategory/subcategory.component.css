@@ -1,44 +1,75 @@
-.menu-item {
-    padding: 10px 20px;
-    color: #726969;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    display: block;
-    position: relative; /* Mantiene la posición relativa */
-  }
-  
-  .material-symbols-outlined {
-    font-family: "Material Symbols Outlined";
-    font-size: 25px;
-    color: #726969;
-    margin-right: 6%;
-  }
-  
-  .text {
-    font-size: 15px;
-  }
-  
-  .submenu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Las subcategorías se extenderán hacia abajo */
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    z-index: 1;
-  }
-  
-  .submenu a {
-    padding: 5px 0;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .submenu.show {
-    display: flex;
-  }
+.category {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: large;
+}
+
+.category a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-size: large;
+  color: var(--color-text-light-two);
+  margin-right: 3%;
+}
+
+.category-text {
+  margin-left: 8px;
+  white-space: nowrap;
+  font-size: medium;
+  margin: 0 0 0 5px;
+  color: var(--color-text-light-two);
+}
+
+.arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+  color: var(--color-text-light-two);
+}
+
+.arrow.open {
+  transform: rotate(0deg);
+}
+
+.subcategories {
+  background-color: var(--color-complement-one);
+  border-radius: 5%;
+}
+
+.subcategory {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: small;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 2%;
+}
+
+.subcategory a {
+  white-space: nowrap;
+  color: var(--color-text-light-two);
+  text-decoration: none;
+}
+.subcategories {
+  list-style-type: none;
+  padding: 0;
+}
+li:hover {
+  background-color: var(--color-complement-one);
+  cursor: pointer;
+}
+
+li:hover > a {
+  color: var(--color-text-dark);
+}

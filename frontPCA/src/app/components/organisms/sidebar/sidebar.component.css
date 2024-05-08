@@ -19,4 +19,8 @@
 .logo{
     width: 30%;
     height: 14%;
+    margin-bottom: 3rem;
+}
+app-menu-list{
+    margin: 0;
 }

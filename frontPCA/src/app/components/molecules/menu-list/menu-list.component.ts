@@ -8,30 +8,55 @@ import { Router } from '@angular/router';
 })
 export class MenuListComponent {
   categories = [
-    { icon: 'schedule', text: 'Nuevo Empleado', url: '/nuevo-empleado' },
-    { icon: 'schedule', text: 'Inventario', url: '/inventario' },
-    { icon: 'schedule', text: 'Medico', url: '/medico' },
-    { icon: 'schedule', text: 'Reportes', url: '/reportes' }
+    { icon: 'home', text: 'Home', url: '/dashboard' }
   ];
 
   subcategories = [
     {
-      icon: 'schedule',
-      text: 'Pendientes',
+      icon: 'person_add',
+      text: 'Empleados',
       subcategories: [
-        { text: 'Tareas pendientes', url: '/tareas-pendientes' },
-        { text: 'Reportes pendientes', url: '/reportes-pendientes' },
-        { text: 'Autorizaciones pendientes', url: '/autorizaciones-pendientes' }
+        { text: 'Nuevo empleado', url: '/nuevoEmpleado' },
+        { text: 'Nuevo candidato', url: '/nuevoCandidato' },
+        { text: 'Nuevo administrativo', url: '/nuevoAdministrativo' },
+      ]
+    },
+    {
+      icon: 'person_apron',
+      text: 'Trabajadores',
+      subcategories: [
+        { text: 'Empleados activos', url: '/empleados-activos' },
+        { text: 'Empleados inactivos', url: '/empleados-inactivos' },
+        { text: 'Candidatos', url: '/candidatos' },
+      ]
+    },
+    {
+      icon: 'list_alt',
+      text: 'Reportes',
+      subcategories: [
+        { text: 'Asistencia Diaria', url: '/tareas-pendientes' },
+        { text: 'Faltas', url: '/reportes-pendientes' },
+        { text: 'Faltas mensuales', url: '/autorizaciones-pendientes' },
+      ]
+    },
+    {
+      icon: 'groups',
+      text: 'Foraneos',
+      subcategories: [
+        { text: 'Foraneos', url: '/autorizaciones-pendientes' },
+        { text: 'Rutas', url: '/autorizaciones-pendientes' },
+        { text: 'Shelters', url: '/autorizaciones-pendientes' }
       ]
     },
     {
       icon: 'schedule',
-      text: 'Empleados',
+      text: 'Pendientes',
       subcategories: [
-        { text: 'Empleados activos', url: '/empleados-activos' },
-        { text: 'Empleados inactivos', url: '/empleados-inactivos' }
+        { text: 'Pendientes IMSS', url: '/tareas-pendientes' },
+        { text: 'Pendientes Contrato', url: '/reportes-pendientes' },
+        { text: 'Pendientes Carta', url: '/autorizaciones-pendientes' }
       ]
-    }
+    },
   ];
 }
 

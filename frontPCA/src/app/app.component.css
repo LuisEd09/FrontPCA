@@ -15,19 +15,18 @@ body {
 }
 
 app-sidebar{
-  background-color: var(--color-background-dark);
+  background-color: var(--color-secondary);
   color: var(--color-text-light);
   grid-area: sidebar;
 }
 
 app-dashboard{
-  background-color: blueviolet;
   grid-area: content;
   padding: 2%;
 }
 
 app-header{
-  background-color: cadetblue; 
+  background-color: var(--color-complement-two); 
   grid-area: header;
 }
 

@@ -1,0 +1,16 @@
+.table-content-container{
+
+}
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .even-row {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #e6e6e6;
+  }
